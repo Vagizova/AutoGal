@@ -1,0 +1,22 @@
+{% set avto = [
+    {"avto": "Марака авто"
+    },
+    {"avto": "ауди"
+    },
+    {"avto": "сетрик"
+    }
+
+]%}
+
+<div class="podbor">
+	<span>Оставьте заявку прямо сейчас и получите бесплатную консультацию</span><br>
+	<form class="podbor__form">
+		<select class="podbor__select"  >
+			{% for item in avto %}
+				<option>{{ item.avto }}</option>
+			{% endfor %}
+		</select>
+		<input type="text" name="phone" placeholder="Номер телефона" class="podbor__phone">
+		<button class="podbor__button button">Оставить заявку</button>
+	</form>
+</div>

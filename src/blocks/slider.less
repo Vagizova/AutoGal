@@ -1,0 +1,83 @@
+.regular{
+	width: 890px;
+	
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.slider{
+	background: #f7f7f7;
+position: relative;
+		
+	&__item{
+		background: white;
+		
+		margin: 0 auto;
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__info{
+
+		width: 50%;
+		& > .car{
+			padding-right: 15px;
+			display: inline-block;
+		}
+		
+		& > p {
+			line-height: 1.5em;
+			display: inline-block;
+		}
+
+		& .name{
+			font-family: RobotoM;
+			font-size: 18px;
+			color: #222;
+
+		}
+		& .year{
+			font-family: RobotoR;
+			font-size: 15px;
+			color: #444;
+			
+		}
+	}
+	&__feedback{
+		margin-top: 50px;
+
+		& > span{
+			font-family: RobotoM;
+			font-size: 18px;
+			color: #222;
+		}
+		& > p {
+			font-family: RobotoR;
+			font-size: 15px;
+			color: #444;
+			margin-top: 30px;
+			
+		}
+	}
+}
+.arrow{
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: white;
+	top: 290px;
+	background-repeat: no-repeat;
+	&_left{
+		left: 100px;
+		background-image: url(/images/left.png);
+	background-position: 45% 50%;
+	}
+	&_right{
+		right: 100px;
+		background-image: url(/images/right.png);
+	background-position: 57% 50%;
+	}
+}

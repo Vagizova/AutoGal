@@ -1,0 +1,52 @@
+
+{% set causes = [
+    {"title": "Мы эксперты", "img": "/images/shit.png", "text": "Нам известны все схемы \"работы\" автосалонов и перекупщиков. Смотанный пробег, скрытые прблемы двигателя,участие в ДТП и многое другое мы определяем мгновенно!"
+    },
+    {"title": "Экономия времени", "img": "/images/clock.png", "text": "Вам не нужно тратить драгоценное время и нервы на многочисленные осмотры проблемных автомобилей. Мы сделаем это за Вас."
+    },
+    {"title": "Реальная экономия денег", "img": "/images/holder.png", "text": "В большинстве случаев клиенты не платят за наши услуги, а наоборот получают денежное вознаграждение после обоснованного торга у капота."
+    },
+    {"title": "Глобальный поиск", "img": "/images/lupa.png", "text": "Мы производим подбор авто не только в Екатеринбурге, но и по всей России. Как результат - находим самые \"вкусные\" предложения!"
+    },
+    {"title": "Подробный отчет", "img": "/images/men.png", "text": "Вы получите всю необходимую информацию по подобранному автомобилю в виде отчета. При оценки авто мы берем во внимание более 100 показателей."
+    },
+    {"title": "Оплата по факту", "img": "/images/hand1.png", "text":"Мы не берем никаких предоплат, оплата осуществляется только после покупки желаемого автомобиля. Рассчитать стоимость услуг Вы можете у нашего менеджера, позвонив по тел. +7(912) 211-48-33"
+    }
+]%}
+
+
+
+<div class="block block__causes causes">
+	<h2>Почему стоит обратиться именно к нам</h2>
+	<ul class="causes__list clearfix">
+		{% for  item in causes %}
+			<li  class="causes__item item">
+				<div class="causes__front">
+					<span>
+						<img src="{{ item.img }}" alt = "">
+					</span><br><br>
+					<span>{{ item.title }}</span>
+					<p>{{ item.text }} </p>
+				</div>
+
+				<div class="card causes__back">
+					<span>{{ item.title }}</span>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script >
+	$(document).ready(function() {
+    $(".causes__item").hover(
+    	function () { $(this).addClass("flip") },   //on mouse over
+    	function () { $(this).removeClass("flip") } //on mouse out
+    );
+});
+</script>
+
+
+
+
+

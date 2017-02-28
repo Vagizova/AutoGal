@@ -1,0 +1,74 @@
+.hello{
+	background-image: url(../images/car.png);
+	height: 700px;
+	background-position: 50%;
+	margin-top: -60px;
+	background-size: 100%;
+
+	&__content{
+		background: rgba(28, 32, 37, 0.7);
+		height: 640px;
+		position: relative;
+		top: 60px;
+		padding-top: 100px;
+		&  .podbor{
+			margin-top: 50px;
+			& span{
+				color: @c-blue;
+			}
+		}
+
+
+	}
+	&__text{
+		display: inline-block;
+		
+		& > span{
+			color: white;
+			font-size: 34px;
+			text-transform: uppercase;
+			font-family: 'RobotoM';
+		}
+		& > p{
+			color: white;
+			font-family: RobotoR;
+			font-size: 16px;
+			margin-top: 20px;
+			font-weight: 200;
+			line-height: 1.2em;
+		}
+		
+	}
+
+}
+.advantages{
+	position: absolute;
+	bottom: 30px;
+	left: 140px;
+	padding-top: 30px;
+	border-top: 1px solid #3c3f44;
+	&__list{
+
+	}
+	&__item{
+		display: inline-block;
+		width: 230px;
+   		color: white;
+   		font-family: RobotoR;
+   		font-size: 14px;
+   		line-height: 1.3em;
+   		vertical-align: top;
+   		margin-right: 30px;
+   		& p{
+   			margin-top: 15px;
+   		}
+   		& span{
+   			font-size: 16px;
+   			& img{
+   				vertical-align: middle;
+   				margin-bottom: 20px;
+   			}
+   		}
+	}
+}
+

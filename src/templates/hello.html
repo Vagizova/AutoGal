@@ -1,0 +1,38 @@
+{% set advantages = [
+    {"title": "Экономия времени", "img": "/images/clock.png", "text": "Просмотрим все варианты, и подберем только лучшие автомобили"
+    },
+    {"title": "Безопасность", "img": "/images/shit.png", "text": "Вы не попадетесь на удочку мошенников, которые продают &#171;серые&#187; автомобили. Проводим полную проверку."
+    },
+    {"title": "Цена авто", "img": "/images/holder.png", "text": "в 90% сделок нам удается сторговать до 15% на стоимости автомобиля (от 50 до 400 тыс. руб.)."
+    }
+]%}
+
+
+
+<div class="hello">
+	<div class="hello__content block">
+		<div class="hello__text">
+			<span>подберем авто с пробегом за 72 часа</span>
+			<p>Профессиональная помощь при покупке авто с пробегом<br>от диагностики до получения документов в ГИБДД</p>
+		</div>
+		{% include 'form-input.html' %}
+		<div class="advantages">
+			<ul class="advantages__list">
+				{% for  item in advantages %}
+					<li class="advantages__item">
+						<span>
+							<img src="{{ item.img }}" alt = "">
+						</span><br><br>
+						<span>{{ item.title }}</span>
+						<p>{{ item.text }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	
+		
+
+</div>
+
+

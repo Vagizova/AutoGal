@@ -1,0 +1,34 @@
+
+{% set contact = [
+    {"title": "Адрес", "img": "/images/points.png", "text": "г. Екатеринбург<br> ул. Малышева 26"
+    },
+    {"title": "Телефон", "img": "/images/phones.png", "text": "+7(912) 211-48-33"
+    },
+    {"title": "E-mail", "img": "/images/mails.png", "text": "autogal@gmail.com"
+    }
+]%}
+
+<div class="block block__contact contact">
+	<h2>Контакты</h2>
+	<div class="contact-block">
+	<ul class="contact__list clearfix">
+		{% for  item in contact %}
+			<li class="contact__item item">
+				<span>
+					<img src="{{ item.img }}" alt = "">
+				</span>
+				<span>{{ item.title }}</span>
+				<p>{{ item.text }} </p>
+			</li>
+		{% endfor %}
+	</ul>
+	<form class="contact__form">
+		<input class="contact__input" placeholder="Имя" type="text" name="name">
+		<input class="contact__input" placeholder="E-mail адрес" type="email" name="email">
+		<input class="contact__input" placeholder="Номер телефона" type="tel" name="phons"><br>
+		<textarea class="contact__text" placeholder="Введите сообщение" name="message"></textarea><br>
+		<button class="podbor__button button">Написать</button>
+	</form>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3svjrxhudz-2eLduCWwrD7Nzqm9RaBvS&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>

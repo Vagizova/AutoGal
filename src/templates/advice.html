@@ -1,0 +1,21 @@
+{% set advice = "На рынке поддержаных автомобилей, в 60% случаев, самостоятельный поиск приводит к покупке \"хлама\". Подбор автомобиля очень важный шаг, который нужно доверить профессионалам." %}
+	
+<div class="advice">
+	<div class="block advice__block">
+		<div class="advice__text">
+			<p> {{ advice }}</p>
+		</div>
+		<a class="button advice__buy" href="">Получить консультацию</a>
+	</div>
+	
+</div>
+<div class="statistic">
+		<ul class="statistic__list clearfix">
+			{% for  items in statistic %}
+				<li class="statistic__item">
+					<span>{{ items.count }}</span>
+					<p>{{ items.text }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>

@@ -1,0 +1,87 @@
+.advice{	   
+background:  url(../images/car3.png)  50% 0% repeat-x, #f7f7f7; 
+background-size: 100%;
+
+
+	&__block{
+		background: rgba(28, 32, 37, 0.7);
+		padding: 50px 0 100px 0;
+		position: relative;
+		text-align: center;
+		height: 348px;
+		box-sizing: border-box;
+	
+	}
+
+	&__text{
+		position: relative;
+		text-align: center;
+		width: 670px;
+		margin: 0 auto;
+		font-family: NotoSans;
+		font-size: 18px;
+		color: white;
+		line-height: 1.4em;
+		margin-bottom: 50px;
+		
+		& p{
+			margin-bottom: 20px;
+		}
+		& span{
+			position: absolute;
+			right: 0;
+			font-family: RobotoM;
+			font-size: 13px;
+		}
+		& span:first-of-type{
+			font-size: 17px;
+		}
+	}
+	&__buy{
+		font-size: 18px;
+
+	}
+}
+.statistic{
+	box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 140px;
+    padding-right: 140px;
+	margin: 0 auto;
+
+background:   #f7f7f7; 
+
+	&__list{
+		.block-flex;
+		flex-wrap: nowrap;
+	}
+	&__item{
+		float: left;
+		width: 316px;
+    	display: flex;
+      	align-items: center;
+	    justify-content: center;
+	    margin-right: 20px;
+
+		& span{
+			float: left;
+			padding: 20px 0;
+			border: 1px solid @c-blue;
+			margin: 20px;
+			margin-left: 0px;
+			width: 70px;			
+			box-sizing: border-box;
+			text-align: center;
+			font-family: RobotoM;
+			font-size: 25px;
+			flex: none;
+		}
+
+		& p{
+			font-family: RobotoR;
+			font-size: 15px;
+			margin-bottom: 0;
+			color: #333;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+
+{% set cost = [
+    {"img" :"/images/1079.png", "title": "Выездная диагностика авто","cost": "от 4550 руб.", 
+    "list": [
+    	{ "item": "Автомобиля по 100 параметрам"},
+    	{ "item": "Оценка кузова, общего состояния"}, 
+    	{ "item": "Проверка внутренней части автомобиля"}, 
+    	{ "item": "Проверка состояния всех систем"}
+    	]
+    },
+    {"img" :"/images/1080.png", "title": "Специалист на целый день","cost": "от 5000 руб.", 
+    "list": [
+    	{ "item": "Преимущества выездной проверки автомобиля"}, 
+    	{ "item": "Советы по выбору объявлений"}, 
+    	{ "item": "Неограниченное количество автомобилей в течение дня"}, 
+    	{ "item": "Перемещение на автомобиле эксперта"}
+    	]
+    },
+    {"img" :"/images/1081.png", "title": "Подбор авто под ключ","cost": "от 16000 руб.", 
+    "list": [
+    	{ "item": "Выезд Эксперта на осмотр автомобилей"}, 
+    	{ "item": "Полная проверка по 100 пунктам"}, 
+    	{ "item": "Юридическая проверка"}, 
+    	{ "item": "Полное ведение сделки от подбора до оформления документов"}
+    	]
+    }
+]%}
+<div class="cost">
+	<div class="block block__cost ">
+		<h2>Стоимость услуг</h2>
+		<ul class="cost__list">
+			{% for  item in cost %}
+				<li class="cost__item item">
+					<div class="cost__item__img">
+						<img src="{{ item.img }}" alt = "">
+						<span>{{ item.title }}</span><br>
+						<span>{{ item.cost }}</span>
+					</div>
+					<ul class="cost__list-info">
+						{% for  items in item.list %}
+							<li class="cost__list-info__item">{{ items.item }}</li>
+						{% endfor %}
+					</ul>
+					<a class="button cost__button" href="">Заказать услугу</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
