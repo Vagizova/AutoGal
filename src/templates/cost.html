@@ -1,5 +1,13 @@
 
 {% set cost = [
+
+    {"img" :"/images/1273.png", "title": "Осмотр ЛКМ","cost": "от 1000 руб.", 
+    "list": [
+        { "item": "Визуальный осмотр автомобиля на наличие различных дефектов"}, 
+        { "item": "Проверка лако-красочного покрытия"}, 
+        { "item": "Проверка зазоров между элементами кузова"}
+        ]
+    },
     {"img" :"/images/1079.png", "title": "Выездная диагностика авто","cost": "от 4550 руб.", 
     "list": [
     	{ "item": "Автомобиля по 100 параметрам"},
@@ -25,7 +33,7 @@
     	]
     }
 ]%}
-<div class="cost">
+<div class="cost" id="cost">
 	<div class="block block__cost ">
 		<h2>Стоимость услуг</h2>
 		<ul class="cost__list">
@@ -41,7 +49,8 @@
 							<li class="cost__list-info__item">{{ items.item }}</li>
 						{% endfor %}
 					</ul>
-					<a class="button cost__button" href="">Заказать услугу</a>
+					<!-- <a class="button cost__button" href="">Заказать услугу</a> -->
+                    <label for="popupCheckboxOne" class=" button cost__button">Заказать услугу</label>
 				</li>
 			{% endfor %}
 		</ul>

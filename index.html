@@ -22,11 +22,11 @@
 		</a>
 		<ul class="menu heder__menu">
 			<li class="menu__item"><a href="">о нас</a></li>
-			<li class="menu__item"><a href="">почему мы</a></li>
-			<li class="menu__item"><a href="">наши услуги</a></li>
-			<li class="menu__item"><a href="">этапы работы</a></li>
-			<li class="menu__item"><a href="">отзывы</a></li>
-			<li class="menu__item"><a href="">контакты</a></li>
+			<li class="menu__item"><a href="#causes">почему мы</a></li>
+			<li class="menu__item"><a href="#cost">наши услуги</a></li>
+			<li class="menu__item"><a href="#step">этапы работы</a></li>
+			<li class="menu__item"><a href="#slider">отзывы</a></li>
+			<li class="menu__item"><a href="#contact">контакты</a></li>
 		</ul>
 		<span class="phone"><img alt = "" src="images/phone.png"> +7(912)211-48-33</span>
 	</div>
@@ -109,7 +109,7 @@
 
 
 
-<div class="block block__causes causes">
+<div class="block block__causes causes" id="causes">
 	<h2>Почему стоит обратиться именно к нам</h2>
 	<ul class="causes__list clearfix">
 		
@@ -305,7 +305,8 @@
 		<div class="advice__text">
 			<p> На рынке поддержаных автомобилей, в 60% случаев, самостоятельный поиск приводит к покупке "хлама". Подбор автомобиля очень важный шаг, который нужно доверить профессионалам.</p>
 		</div>
-		<a class="button advice__buy" href="">Получить консультацию</a>
+		<!-- <a class="button advice__buy" href="">Получить консультацию</a> -->
+		<label for="popupCheckboxOne" class=" button advice__buy">Получить консультацию</label>
 	</div>
 	
 </div>
@@ -391,10 +392,29 @@
 </div>
         
 
-<div class="cost">
+<div class="cost" id="cost">
 	<div class="block block__cost ">
 		<h2>Стоимость услуг</h2>
 		<ul class="cost__list">
+			
+				<li class="cost__item item">
+					<div class="cost__item__img">
+						<img src="/images/1273.png" alt = "">
+						<span>Осмотр ЛКМ</span><br>
+						<span>от 1000 руб.</span>
+					</div>
+					<ul class="cost__list-info">
+						
+							<li class="cost__list-info__item">Визуальный осмотр автомобиля на наличие различных дефектов</li>
+						
+							<li class="cost__list-info__item">Проверка лако-красочного покрытия</li>
+						
+							<li class="cost__list-info__item">Проверка зазоров между элементами кузова</li>
+						
+					</ul>
+					<!-- <a class="button cost__button" href="">Заказать услугу</a> -->
+                    <label for="popupCheckboxOne" class=" button cost__button">Заказать услугу</label>
+				</li>
 			
 				<li class="cost__item item">
 					<div class="cost__item__img">
@@ -413,7 +433,8 @@
 							<li class="cost__list-info__item">Проверка состояния всех систем</li>
 						
 					</ul>
-					<a class="button cost__button" href="">Заказать услугу</a>
+					<!-- <a class="button cost__button" href="">Заказать услугу</a> -->
+                    <label for="popupCheckboxOne" class=" button cost__button">Заказать услугу</label>
 				</li>
 			
 				<li class="cost__item item">
@@ -433,7 +454,8 @@
 							<li class="cost__list-info__item">Перемещение на автомобиле эксперта</li>
 						
 					</ul>
-					<a class="button cost__button" href="">Заказать услугу</a>
+					<!-- <a class="button cost__button" href="">Заказать услугу</a> -->
+                    <label for="popupCheckboxOne" class=" button cost__button">Заказать услугу</label>
 				</li>
 			
 				<li class="cost__item item">
@@ -453,7 +475,8 @@
 							<li class="cost__list-info__item">Полное ведение сделки от подбора до оформления документов</li>
 						
 					</ul>
-					<a class="button cost__button" href="">Заказать услугу</a>
+					<!-- <a class="button cost__button" href="">Заказать услугу</a> -->
+                    <label for="popupCheckboxOne" class=" button cost__button">Заказать услугу</label>
 				</li>
 			
 		</ul>
@@ -486,7 +509,7 @@
         
 
 
-<div class="block block__step step">
+<div class="block block__step step" id="step">
 	<h2>Контакты</h2>
 	<div class="step-block">
 	<ul class="step__list">
@@ -580,7 +603,7 @@
 </div>
         
 
-<div class="slider">
+<div class="slider" id="slider">
 	<div class="block block__slider ">
 		<h2>Подобранные нами автомобили</h2>
 <div class="regular">
@@ -647,7 +670,7 @@
         
 
 
-<div class="block block__contact contact">
+<div class="block block__contact contact" id="contact">
 	<h2>Контакты</h2>
 	<div class="contact-block">
 	<ul class="contact__list clearfix">
@@ -687,6 +710,25 @@
 	</div>
 </div>
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3svjrxhudz-2eLduCWwrD7Nzqm9RaBvS&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        <div class="popup-wrapper">
+  <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+  <div class="popup">
+    <div class="popup-content">
+    <h1>оставьте заявку</h1>
+    <span>и мы Вам перезвоним</span>
+    <form>
+    	<input type="text" name="name" placeholder="Ваше имя">
+    	<input type="phone" name="phone" placeholder="Ваш телефон">
+      <button class="podbor__button button">Написать</button>
+    </form>
+      <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+    </div>
+  </div>
+</div>
+
+
+
+
         
 
         
