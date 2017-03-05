@@ -52,8 +52,8 @@
 		<div class="podbor">
 	<span>Оставьте заявку прямо сейчас и получите бесплатную консультацию</span><br>
 	<form class="podbor__form ajax-mail-form" data-type="selection">
-		<select class="podbor__select"  >
-			<option disabled="disabled" selected="selected">Марака авто</option>
+		<select class="podbor__select" name="brand">
+			<option disabled="disabled" selected="selected">Марка авто</option>
 		</select>
 		<input type="text" name="phone" placeholder="Номер телефона" class="podbor__phone">
 		<button class="podbor__button button">Оставить заявку</button>
@@ -488,8 +488,8 @@
 		<div class="podbor">
 	<span>Оставьте заявку прямо сейчас и получите бесплатную консультацию</span><br>
 	<form class="podbor__form ajax-mail-form" data-type="selection">
-		<select class="podbor__select"  >
-			<option disabled="disabled" selected="selected">Марака авто</option>
+		<select class="podbor__select" name="brand">
+			<option disabled="disabled" selected="selected">Марка авто</option>
 		</select>
 		<input type="text" name="phone" placeholder="Номер телефона" class="podbor__phone">
 		<button class="podbor__button button">Оставить заявку</button>
@@ -723,7 +723,7 @@
 </div>
       <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
 
-      <div class="approved2" id="approved2" style="visibility: hidden">
+      <div class="approved2" id="approved2" style="display: none">
           <span>Спасибо!</span><br>
           <span>Ваша заявка принята!</span><br>
           <span>Менеджер свяжется с Вами в ближайшее время!</span><br>
@@ -770,5 +770,6 @@
 <script type="text/javascript" src="/slick/slick.min.js"></script>
     
     <script src='js/main.js'></script>
+    <script src='js/form.js'></script>
 </body>
 </html>
