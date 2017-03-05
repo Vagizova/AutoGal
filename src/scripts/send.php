@@ -43,7 +43,7 @@ function requestPostVar($key){
 
 $mailer = new PHPMailer();
 $mailer->set('CharSet', 'UTF-8');
-$mailer->set('From', 'order@autogal.online');
+$mailer->set('From', EMAIL_FROM);
 $mailer->set('FromName', 'ПодборАВТО');
 
 $type = requestPostVar('type');
@@ -90,7 +90,7 @@ switch($type){
 
 $mailer->set('Body', $message);
 
-$mailer->addAddress('autogal-info@mail.ru');
+$mailer->addAddress(EMAIL_TO);
 
 
 if($mailer->send()){

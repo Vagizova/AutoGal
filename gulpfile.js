@@ -30,7 +30,7 @@ var path = {
         styles: 'src/style/main.less',
         images: 'src/images/*.*',
         fonts: 'src/fonts/*.*',
-        scripts: 'src/scripts/**/*.php'
+        scripts: ['src/scripts/**/*.php', '!src/scripts/config.php']
     },
     watch: { //за изменением каких файлов мы хотим наблюдать
         jhtml: 'src/pages/*.html',

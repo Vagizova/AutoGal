@@ -1,3 +1,5 @@
 <?php
 
 define('VENDOR_DIR', __DIR__ . '/../../vendor');
+define('EMAIL_TO', 'autogal-info@mail.ru');
+define('EMAIL_FROM', 'order@autogal.online');
