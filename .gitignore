@@ -1,8 +1,10 @@
 .idea
 vendor
+build
 .DS_Store
 node_modules/
 design/
 *.sublime-project
 *.sublime-workspace
 build.zip
+gulp_config.json

@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . '/../vendor/autoload.php';
+include_once __DIR__ . '/../../vendor/autoload.php';
 
 header('Content-type: application/json');
 
@@ -90,6 +90,7 @@ switch($type){
 $mailer->set('Body', $message);
 
 $mailer->addAddress('autogal-info@mail.ru');
+
 
 if($mailer->send()){
     response(STATUS_SUCCESS);
