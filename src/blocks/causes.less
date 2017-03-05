@@ -1,73 +1,59 @@
 .causes{
-
 	& h2{
-
 		text-align: center;
 		margin-bottom: 60px;
 
-
-
 		&:after{
-		    left: 50%;
-		    margin-left: -30px;
+			left: 50%;
+			margin-left: -30px;
 		}
 	}
-    &__front{
-        padding: 0 30px;
-    }
-    &__back{
-        transform: rotateY( 180deg );
-        background: @c-blue;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 50px;
-        width: 100%;
-        & span {
-            color: white;
-            font-size: 24px;
-
-
-        }
-    }
-
+	&__front{
+		padding: 0 30px;
+	}
+	&__back{
+		transform: rotateY( 180deg );
+		background: @c-blue;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 50px;
+		width: 100%;
+		& span{
+			color: white;
+			font-size: 24px;
+		}
+	}
 	&__list{
 		font-size: 0;
 		.block-flex;
-		perspective: 2000px; 
-
+		perspective: 2000px;
 	}
-
 	&__item{
 		width: 33%;
-   		height: 250px;
-   		padding: 20px;
-   		transition: transform 1s;
-        transform-style: preserve-3d;
-        position: relative;
+		height: 250px;
+		padding: 20px;
+		transition: transform 1s;
+		transform-style: preserve-3d;
+		position: relative;
 
-        & > div{
-                backface-visibility: hidden;
-                
-                height: 75%;
-                position: absolute;
-                top: 0;
-                left: 0;
-        }
-   		
-    
+		& > div{
+			backface-visibility: hidden;
+			height: 75%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 
-   
-   		
-   		& span{	
-   			text-transform: uppercase;
-   			font-weight: bold;
-        margin-bottom: 15px;
-    display: inline-block;
-   		}
+		& span{
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 15px;
+			display: inline-block;
+		}
 	}
 }
-.flip {    /* добавляя этот класс, поворачиваем контейнер на 180 градусов */
-        transform: rotateY( 180deg );
-    }
+.flip{
+	transform: rotateY( 180deg );
+}
 
 

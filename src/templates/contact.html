@@ -1,21 +1,20 @@
-
 {% set contact = [
-    {"title": "Адрес", "img": "/images/points.png", "text": "г. Екатеринбург<br> ул. Малышева 26"
-    },
-    {"title": "Телефон", "img": "/images/phones.png", "text": "+7(912)636-00-69"
-    },
-    {"title": "E-mail", "img": "/images/mails.png", "text": "autogal@gmail.com"
-    }
+	{"title": "Адрес", "img": "/images/points.png", "text": "г. Екатеринбург<br> ул. Малышева 26"
+	},
+	{"title": "Телефон", "img": "/images/phones.png", "text": "+7(912)636-00-69"
+	},
+	{"title": "E-mail", "img": "/images/mails.png", "text": "autogal@gmail.com"
+	}
 ]%}
 
 <div class="block block__contact contact" id="contact">
 	<h2>Контакты</h2>
 	<div class="contact-block">
 	<ul class="contact__list clearfix">
-		{% for  item in contact %}
+		{% for item in contact %}
 			<li class="contact__item item">
 				<span>
-					<img src="{{ item.img }}" alt = "">
+					<img src="{{ item.img }}" alt="">
 				</span>
 				<span>{{ item.title }}</span>
 				<p>{{ item.text }} </p>

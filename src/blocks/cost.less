@@ -1,68 +1,65 @@
 .cost{
 	background: #f7f7f7;
-    
-    &__list{
-    	margin-top: 50px;
-    	display: flex;
-    	justify-content: space-around;
+	
+	&__list{
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item{
+		width: 23%;
+		background: white;
+		padding: 10px;
+		padding-bottom: 40px;
+		text-align: center;
+		position: relative;
 
-    }
+		&__img{
+			padding-bottom: 10px;
+			border-bottom: 1px solid #eaeaea;
+			text-align: left;
 
-    &__item{
-    	width: 23%;
-    	background: white;
-    	padding: 10px;
-    	padding-bottom: 40px;
-    	text-align: center;
-        position: relative;
+			& img{
+				margin-bottom: 20px;
+				height: 125px;
+			}
+			& span{
+				font-size: 18px;
+				color: #222;
+			}
+			& span:nth-child(2){
+				font-family: RobotoR;
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			& span:nth-child(4){
+				font-family: RobotoM;	
+			}
+		}
+	}
 
-    	&__img{
-    		    padding-bottom: 10px;
-    border-bottom: 1px solid #eaeaea;
-    text-align: left;
+	&__list-info{
+		margin-top: 20px;
+		margin-bottom: 40px;
+		text-align: left;
+		margin-right: 10px;
 
-    		& img{
-    margin-bottom: 20px;
-    height: 125px;
-    		}
-    		& span{
-    			font-size: 18px;
-    			color: #222;
-    		}
-    		& span:nth-child(2){
-    			font-family: RobotoR;
-                display: inline-block;
-                margin-bottom: 15px;
-    		}
-    		& span:nth-child(4){
-    			font-family: RobotoM;	
-    		}
-    	}
-
-    }
-
-    &__list-info{
-    	margin-top: 20px;
-    	margin-bottom: 40px;
-    	text-align: left;
-        margin-right: 10px;
-    	&__item{
+		&__item{
 			background: url(../images/point.png) 0% 50% no-repeat;
 			padding-left: 30px;
 			margin: 10px 0;
 			font-family: RobotoR;
 			font-size: 14px;
 			color: #444;
-    	}
-    }
-    &__button{
-    	font-size: 16px;
-        position: absolute;
-        padding-left: 0;
-        padding-right: 0;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-    }
-
+		}
+	}
+	&__button{
+		font-size: 16px;
+		position: absolute;
+		padding-left: 0;
+		padding-right: 0;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+	}
 }

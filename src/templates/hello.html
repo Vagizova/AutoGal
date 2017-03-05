@@ -1,13 +1,11 @@
 {% set advantages = [
-    {"title": "Экономия времени", "img": "/images/clock.png", "text": "Все хлопоты по приобретению выбранного Вами автомобиля мы возьмем на себя."
-    },
-    {"title": "Безопасность", "img": "/images/shit.png", "text": "Вы не попадетесь на удочку мошенников, которые продают &#171;серые&#187; автомобили. Проводим полную проверку."
-    },
-    {"title": "Полная окупаемость услуг", "img": "/images/holder.png", "text": "В 90% случаев мы можем сторговать сумму, превышающую стоимость наших услуг."
-    }
+	{"title": "Экономия времени", "img": "/images/clock.png", "text": "Все хлопоты по приобретению выбранного Вами автомобиля мы возьмем на себя."
+	},
+	{"title": "Безопасность", "img": "/images/shit.png", "text": "Вы не попадетесь на удочку мошенников, которые продают &#171;серые&#187; автомобили. Проводим полную проверку."
+	},
+	{"title": "Полная окупаемость услуг", "img": "/images/holder.png", "text": "В 90% случаев мы можем сторговать сумму, превышающую стоимость наших услуг."
+	}
 ]%}
-
-
 
 <div class="hello" id="hello">
 	<div class="hello__content block">
@@ -18,10 +16,10 @@
 		{% include 'form-input.html' %}
 		<div class="advantages">
 			<ul class="advantages__list">
-				{% for  item in advantages %}
+				{% for item in advantages %}
 					<li class="advantages__item">
 						<span>
-							<img src="{{ item.img }}" alt = "">
+							<img src="{{ item.img }}" alt="">
 						</span><br><br>
 						<span>{{ item.title }}</span>
 						<p>{{ item.text }}</p>
@@ -30,9 +28,4 @@
 			</ul>
 		</div>
 	</div>
-	
-		
-
 </div>
-
-
