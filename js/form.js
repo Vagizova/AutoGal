@@ -14,15 +14,6 @@ $(document).on('ready', function() {
         }
     }
 
-    function _closeApproverPopup(){
-        var popup = $('.popup');
-
-        popup.find('#hidden2').show();
-        popup.find('#approved2').hide();
-
-        popup.hide();
-    }
-
     auto_select.on('click', function(){
         if($(this).hasClass('loading') || $(this).hasClass('loaded')){
             return;
@@ -61,7 +52,10 @@ $(document).on('ready', function() {
             return true;
         }
 
-        _closeApproverPopup();
+        var popup = $('.popup');
+
+        popup.find('#hidden2').show();
+        popup.find('#approved2').hide();
     });
 
     $('#approved2').find('a.button').on('click', function(){

@@ -91,8 +91,6 @@ $mailer->set('Body', $message);
 
 $mailer->addAddress('autogal-info@mail.ru');
 
-response(STATUS_SUCCESS);
-
 if($mailer->send()){
     response(STATUS_SUCCESS);
 }else{
