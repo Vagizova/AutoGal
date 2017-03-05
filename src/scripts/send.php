@@ -1,6 +1,7 @@
 <?php
 
-include_once __DIR__ . '/../../vendor/autoload.php';
+include_once 'config.php';
+include_once VENDOR_DIR . '/autoload.php';
 
 header('Content-type: application/json');
 
