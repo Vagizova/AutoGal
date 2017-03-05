@@ -492,7 +492,7 @@
         
 <div class="request">
 	<div class="block block__request request__block ">
-	<h2>Онлайн заявка</h2>
+	<h2>Онлайн заявка</h2><div id="hidden">
 		
 
 <div class="podbor">
@@ -511,7 +511,8 @@
 		<button class="podbor__button button">Оставить заявку</button>
 	</form>
 </div>
-		<div class="approved" style="visibility: hidden;">
+		</div>
+		<div id="approved" class="approved" style="visibility: hidden;">
 	<span>Спасибо!</span><br>
 	<span>Ваша заявка принята!</span><br>
 	<span>Менеджер свяжется с Вами в ближайшее время!</span><br>
@@ -727,6 +728,7 @@
   <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
   <div class="popup">
     <div class="popup-content">
+    <div id="hidden2">
     <h1>оставьте заявку</h1>
     <span>и мы Вам перезвоним</span>
     <form>
@@ -734,9 +736,10 @@
     	<input type="phone" name="phone" placeholder="Ваш телефон">
       <button class="podbor__button button">Написать</button>
     </form>
+</div>
       <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
 
-      <div class="approved" style="visibility: hidden">
+      <div class="approved2" id="approved2" style="visibility: hidden">
           <span>Спасибо!</span><br>
           <span>Ваша заявка принята!</span><br>
           <span>Менеджер свяжется с Вами в ближайшее время!</span><br>
