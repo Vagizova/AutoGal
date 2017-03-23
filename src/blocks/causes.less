@@ -13,7 +13,7 @@
 	}
 	&__back{
 		transform: rotateY( 180deg );
-		background: @c-blue;
+		background: #5ecef7;
 		text-align: center;
 		vertical-align: middle;
 		padding-top: 50px;
@@ -54,6 +54,44 @@
 }
 .flip{
 	transform: rotateY( 180deg );
+}
+
+
+@media (max-width: 1000px){
+	
+	.causes{
+		&__item{
+			width: 50%;
+			height: 250px;
+			
+		}
+		&__front{
+			padding: 0 10px;
+		}
+	}
+}
+@media (max-width: 600px){
+	
+	.causes{
+		&__item{
+			width: 100%;
+			height: 220px;
+		}
+		&__list{
+			padding: 0 50px;
+		}
+	}
+}
+@media (max-width: 400px){
+	
+	.causes{
+		&__item{
+			height: 250px;
+		}
+		&__list{
+			padding: 0px;
+		}
+	}
 }
 
 

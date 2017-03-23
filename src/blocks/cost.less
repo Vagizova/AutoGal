@@ -61,5 +61,55 @@
 		left: 10px;
 		right: 10px;
 		bottom: 10px;
+
+	}
+}
+@media (max-width: 1000px){
+	
+	.cost{
+
+		&__list{
+			flex-wrap: wrap;
+		}
+		&__item{
+			width: 45%;
+			margin-bottom: 20px;
+
+			&__img img{
+				width: 100%;
+			}
+		}
+		
+	}
+}
+@media (max-width: 600px){
+	
+	.cost{
+
+		&__list{
+			flex-wrap: wrap;
+		}
+		&__item{
+			width: 70%;
+			
+
+			&__img img{
+				height: auto;
+			}
+		}
+		
+	}
+}
+@media (max-width: 400px){
+	
+	.cost{
+
+		
+		&__item{
+			width: 100%;
+			
+
+		}
+		
 	}
 }

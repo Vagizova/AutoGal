@@ -2,7 +2,7 @@
 	background: gray;
 	background-image: url(../images/car2.png);
 	background-position: 50%;
-	background-size: 100%;
+	
 
 	&__block{
 		background: rgba(28, 32, 37, 0.7);
@@ -39,5 +39,54 @@
 		& span:first-of-type{
 			font-size: 17px;
 		}
+	}
+}
+@media (min-width: 1000px){
+	
+	.appeal{
+		background-size: 100%;
+	}
+}
+
+@media (max-width: 1000px){
+	
+	.appeal{
+
+		&__block{
+			padding-left: 70px;
+
+			& >h2{
+				margin-bottom: 40px;
+			}
+		}
+		&__text{
+			width: 350px;
+			font-size: 13px;
+
+			& > span{
+				right: 20px;
+			}
+		}
+
+	}
+}
+@media (max-width: 800px){
+	
+	.appeal{
+
+		&__block{
+			padding-left: 20px;
+			padding-right: 20px;
+
+			&  img{
+				display: none;
+			}
+		}
+		&__text{
+			width: 100%;
+
+			
+		}
+
 	}
 }

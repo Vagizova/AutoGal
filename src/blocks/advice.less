@@ -1,6 +1,6 @@
 .advice{
 	background: url(../images/car3.png) 50% 0% repeat-x, #f7f7f7;
-	background-size: 100%;
+	
 
 	&__block{
 		background: rgba(28, 32, 37, 0.7);
@@ -75,6 +75,41 @@
 			font-size: 15px;
 			margin-bottom: 0;
 			color: #333;
+		}
+	}
+}
+
+@media (min-width: 1000px){
+	
+	.advice{
+		background-size: 100%;
+	}
+}
+@media (max-width: 800px){
+	
+	.advice{
+		&__block{
+			height: 300px;
+			padding: 50px 20px 100px 20px;
+		}
+		&__text{
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 400px){
+.advice{
+	background-size: auto 100%;
+		&__block{
+			height: 100%;
+			padding: 50px 0;
+			
+		}
+		&__buy{
+			font-size: 16px;
+			width: 100%;
+			white-space: nowrap;
 		}
 	}
 }

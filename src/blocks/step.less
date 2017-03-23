@@ -64,3 +64,78 @@
 		}
 	}
 }
+
+
+
+@media (max-width: 1000px){
+	
+	.step{
+
+		
+		&__item{
+			
+
+			& > span{
+				top: 0;
+				left: 0;
+				padding-bottom: 0;
+			}
+			&-block{
+				border: none;
+
+				& > p{
+					padding: 0;
+				}
+			}
+		}
+		
+	}
+}
+@media (max-width: 800px){
+	
+	.step{
+
+		
+		&__item{
+			width: 50%;
+
+			&:nth-child(4), &:nth-child(5), &:nth-child(6){
+			margin-top: 0px;
+			}
+
+			&-block{
+				height: 200px;
+			}
+		}
+		}
+	
+}
+@media (max-width: 600px){
+	
+	.step{
+		&__list{
+			margin-left: 30px;
+		}
+		
+		&__item{
+			width: 70%;
+
+			
+		}
+		}
+	
+}
+@media (max-width: 400px){
+	
+	.step{
+		&__item-block{
+			height: auto;
+margin-bottom: 20px;
+
+			
+		}
+		}
+	
+}
+
+

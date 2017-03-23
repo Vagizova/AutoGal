@@ -1,5 +1,24 @@
 $(document).on('ready', function(){
 
+
+    $('#u10657').hide();
+       $("#menu-button").on('click', function(e){
+        var menu = $('#u10657'),
+            btn = $(this);
+
+        if(btn.hasClass('menu__icon_close')){
+            btn.removeClass('menu__icon_close');
+            btn.addClass('menu__icon');
+            menu.hide();
+        }else{
+            btn.addClass('menu__icon_close');
+            btn.removeClass('menu__icon ');
+            menu.show();
+        }
+
+        return false;
+    });
+
     var auto_select = $('.podbor__select');
 
     function _openApproverPopup(){
@@ -69,16 +88,14 @@ $(document).on('ready', function(){
     $('.regular').slick({
         dots: true,
         infinite: true,
-        slidesToShow: 1,
-        prevArrow: arrowleft,
-        nextArrow: arrowright
+        slidesToShow: 1
     });
 
     $('body').on('click', '[href*="#"]', function(e){
         var fixed_offset = 60;
         $('html,body').stop().animate({
             scrollTop: $(this.hash).offset().top - fixed_offset
-        }, 1000);
+        }, 1500);
 
         e.preventDefault();
     });
