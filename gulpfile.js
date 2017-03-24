@@ -19,8 +19,7 @@ var path = {
         libs: config.server.baseDir + '/libs/',
         styles: config.server.baseDir + '/styles/',
         images: config.server.baseDir + '/images/',
-        fonts: config.server.baseDir + '/fonts/',
-        scripts: config.server.baseDir + '/scripts/'
+        fonts: config.server.baseDir + '/fonts/'
     },
     src: { //откуда брать исходники
         html: 'src/pages/*.html',
@@ -29,8 +28,7 @@ var path = {
         libs: 'src/libs/**/*.*',
         styles: 'src/style/main.less',
         images: 'src/images/*.*',
-        fonts: 'src/fonts/*.*',
-        scripts: ['src/scripts/**/*.php', '!src/scripts/config.php']
+        fonts: 'src/fonts/*.*'
     },
     watch: { //за изменением каких файлов мы хотим наблюдать
         jhtml: 'src/pages/*.html',
@@ -103,20 +101,13 @@ gulp.task('fonts', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('server_scripts', function () {
-    return gulp.src(path.src.scripts)
-        .pipe(gulp.dest(path.build.scripts))
-        .pipe(reload({stream: true}));
-});
-
 gulp.task('build', [
     'html',
     'js',
     'libs',
     'styles',
     'images',
-    'fonts',
-    'server_scripts'
+    'fonts'
 ]);
 
 gulp.task('watch', function(){

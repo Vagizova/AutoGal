@@ -1,5 +1,4 @@
 .idea
-vendor
 build
 .DS_Store
 node_modules/
@@ -8,4 +7,3 @@ design/
 *.sublime-workspace
 build.zip
 gulp_config.json
-src/scripts/config.php
