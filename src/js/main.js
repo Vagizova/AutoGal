@@ -1,8 +1,7 @@
 $(document).on('ready', function(){
 
-
     $('#u10657').hide();
-       $("#menu-button").on('click', function(e){
+    $("#menu-button").on('click', function(e){
         var menu = $('#u10657'),
             btn = $(this);
 
@@ -19,8 +18,6 @@ $(document).on('ready', function(){
         return false;
     });
 
-    var auto_select = $('.podbor__select');
-
     function _openApproverPopup(){
         var popup = $('.popup');
 
@@ -32,39 +29,6 @@ $(document).on('ready', function(){
             popup.show();
         }
     }
-
-    auto_select.on('click', function(){
-        if($(this).hasClass('loading') || $(this).hasClass('loaded')){
-            return;
-        }
-
-        $(this).addClass('loading');
-        $.get('http://api.auto.ria.com/categories/1/marks', function(response){
-            for(var i = 0; i < response.length; i++){
-                auto_select.append('<option>' + response[i].name + '</option>');
-            }
-
-            auto_select.addClass('loaded');
-        }, 'json');
-    });
-
-
-    $('form.ajax-mail-form').on('submit', function(){
-        var form = $(this),
-            data = form.serializeArray();
-        
-        data.push({'name': 'type', 'value': form.data('type')});
-
-        $.post('/scripts/send.php', data, function(response){
-            if(response.status == 'error'){
-                return;
-            }
-
-            _openApproverPopup();
-        });
-
-        return false;
-    });
 
     $('#popupCheckboxOne').on('change', function(){
         if(!$(this).is(':checked')){
@@ -81,9 +45,6 @@ $(document).on('ready', function(){
         $('#popupCheckboxOne').click();
         return false;
     });
-
-});
-$(document).on('ready', function(){
 
     $('.regular').slick({
         dots: true,
